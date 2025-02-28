@@ -22,4 +22,4 @@ st.write(df.describe())
 
 
 st.write("### Descrição")
-st.write(analise_descritiva(df,assunto))
+st.markdown(analise_descritiva(df,assunto))
