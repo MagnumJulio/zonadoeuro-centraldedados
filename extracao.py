@@ -1,9 +1,9 @@
 import requests
 import pandas as pd
 import itertools
-import tkinter as tk
-from tkinter import simpledialog
-import pyperclip
+# import tkinter as tk
+# from tkinter import simpledialog
+# import pyperclip
 # # Criar janela para pedir o link da API
 # def pedir_link():
 #     root = tk.Tk()
