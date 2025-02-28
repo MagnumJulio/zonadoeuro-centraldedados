@@ -3,8 +3,10 @@ import openai
 
 # OpenAI
 
-def analise_descritiva(df, key):
-    openai.api_key = key
+def analise_descritiva(df):
+    api_key = st.secrets["OPENAI_API_KEY"]
+    client = openai.OpenAI(api_key=api_key)
+
     # Encontrar as duas últimas datas
     ultimas_datas = df['time'].tail(3)
 
@@ -22,7 +24,8 @@ Você é um economista experiente. Com base nos dados abaixo, escreva uma breve 
 {texto}
     """
 
-    resposta = openai.ChatCompletion.create(
+    resposta = openai.Client().chat.completions.create(
+
         model="gpt-4",
         messages=[{"role":"system", "content": "Você é um analista econômico"},
                   {"role": "user", "content": prompt}],
@@ -30,4 +33,5 @@ Você é um economista experiente. Com base nos dados abaixo, escreva uma breve 
         
     )
 
-    return resposta['choices'][0]['message']['content']
+    return resposta.choices[0].message.content
+

@@ -17,6 +17,6 @@ st.dataframe(df)
 st.write("### Estatísticas Descritivas")
 st.write(df.describe())
 
-api_key = st.secrets["OPENAI_API_KEY"]
+
 st.write("### Descrição")
-st.write(analise_descritiva(df, api_key))
+st.write(analise_descritiva(df))
