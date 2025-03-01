@@ -52,12 +52,6 @@ def carregar_dados(tema, subtema):
 # Carregar dados e comentários do subtema selecionado
 df, comentario = carregar_dados(tema, subtema)
 
-# Mostrar DataFrame e Comentário
-st.write("### Base de Dados")
-st.dataframe(df)
-
-st.write("### Comentário Atualizado")
-st.markdown(comentario)
 
 # Se há dados, aplicar filtros dinâmicos e gerar gráfico
 if not df.empty:
@@ -116,3 +110,11 @@ if not df.empty:
 
 else:
     st.warning("Nenhum dado disponível para este subtema.")
+
+# Mostrar DataFrame e Comentário
+st.write("### Comentário Atualizado")
+st.markdown(comentario)
+
+st.write("### Base de Dados")
+st.dataframe(df)
+
