@@ -72,9 +72,6 @@ if not df.empty:
         if selecao != "Todos":
             df_filtrado = df_filtrado[df_filtrado[coluna] == selecao]
 
-    st.write("### Dados Filtrados")
-    st.dataframe(df_filtrado)
-
     # Plotly Gráfico Interativo com Legenda Completa
     if not df_filtrado.empty:
         if len(colunas_filtro) > 0:
@@ -97,13 +94,16 @@ if not df.empty:
         fig.update_layout(
             legend=dict(
                 orientation="h",
-                yanchor="bottom",
-                y=-0.25,  # Isso pode ajustar conforme o tamanho do gráfico e da legenda
+                yanchor="top",
+                y=-0.3,  # Isso pode ajustar conforme o tamanho do gráfico e da legenda
                 xanchor="center",
                 x=0.5
             )
         )
         st.plotly_chart(fig, use_container_width=True)
+        st.write("### Dados Filtrados")
+        st.dataframe(df_filtrado)
+
 
     else:
         st.warning("Nenhum dado disponível para os filtros selecionados.")
