@@ -59,40 +59,50 @@ st.dataframe(df)
 st.write("### Comentário Atualizado")
 st.markdown(comentario)
 
-# Filtros dinâmicos (automáticos)
-st.sidebar.write("### Filtros Dinâmicos")
-filtros = {}
+# Se há dados, aplicar filtros dinâmicos e gerar gráfico
+if not df.empty:
+    # Filtros dinâmicos (considera como filtro qualquer coluna que não seja 'time' ou 'value')
+    st.sidebar.write("### Filtros Dinâmicos")
+    filtros = {}
 
-# Considera como filtro qualquer coluna que não seja 'time' ou 'value'
-colunas_filtro = [col for col in df.columns if col not in ['time', 'value']]
+    colunas_filtro = [col for col in df.columns if col not in ['time', 'value']]
 
-for coluna in colunas_filtro:
-    opcoes = ["Todos"] + sorted(df[coluna].dropna().unique().tolist())
-    selecao = st.sidebar.selectbox(f"Filtrar por {coluna}", opcoes)
-    filtros[coluna] = selecao
+    for coluna in colunas_filtro:
+        opcoes = ["Todos"] + sorted(df[coluna].dropna().unique().tolist())
+        selecao = st.sidebar.selectbox(f"Filtrar por {coluna}", opcoes)
+        filtros[coluna] = selecao
 
-# Aplicar os filtros automaticamente
-df_filtrado = df.copy()
-for coluna, selecao in filtros.items():
-    if selecao != "Todos":
-        df_filtrado = df_filtrado[df_filtrado[coluna] == selecao]
+    # Aplicar filtros no DataFrame
+    df_filtrado = df.copy()
+    for coluna, selecao in filtros.items():
+        if selecao != "Todos":
+            df_filtrado = df_filtrado[df_filtrado[coluna] == selecao]
 
-# Mostrar a base filtrada
-st.write("### Dados Filtrados")
-st.dataframe(df_filtrado)
+    st.write("### Dados Filtrados")
+    st.dataframe(df_filtrado)
 
-# Gráfico interativo
-if len(df_filtrado) > 0:
-    fig = px.line(
-        df_filtrado,
-        x='time',
-        y='value',
-        color=colunas_filtro[-2] if colunas_filtro else None,
-        markers=True,
-        title=f"Evolução Temporal - {subtema}",
-        labels={'value': 'Valor', 'time': 'Data'}
-    )
-    st.plotly_chart(fig, use_container_width=True)
+    # Plotly Gráfico Interativo com Legenda Completa
+    if not df_filtrado.empty:
+        if len(colunas_filtro) > 0:
+            # Combina colunas de segmentação para criar uma legenda rica
+            df_filtrado['serie_legenda'] = df_filtrado[colunas_filtro].astype(str).agg(' - '.join, axis=1)
+            color_coluna = 'serie_legenda'
+        else:
+            color_coluna = None
+
+        fig = px.line(
+            df_filtrado,
+            x='time',
+            y='value',
+            color=color_coluna,
+            markers=True,
+            title=f"Evolução Temporal - {subtema}",
+            labels={'value': 'Valor', 'time': 'Data'}
+        )
+        st.plotly_chart(fig, use_container_width=True)
+
+    else:
+        st.warning("Nenhum dado disponível para os filtros selecionados.")
+
 else:
-    st.warning("Nenhum dado disponível para os filtros selecionados.")
-
+    st.warning("Nenhum dado disponível para este subtema.")
