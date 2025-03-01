@@ -9,7 +9,7 @@ sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 from openAIapi import analise_descritiva
 
 
-url = "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/sts_inpr_m?format=JSON&sinceTimePeriod=2019-01&geo=EA20&geo=DE&geo=FR&geo=IT&unit=I21&unit=PCH_PRE&unit=PCH_SM&indic_bt=PRD&nace_r2=B-D&s_adj=SCA&lang=en"
+url = "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/sts_inpr_m?format=JSON&sinceTimePeriod=2019-01&geo=EA20&geo=DE&geo=FR&geo=IT&unit=I21&unit=PCH_PRE&unit=PCH_SM&indic_bt=PRD&nace_r2=B-D&s_adj=CA&s_adj=SCA&lang=en"
 topico,subtopico = "atividade_economica", "producao_industrial"
 classificacoes = ['nace_r2', 'unit', 'geo']
 
