@@ -99,6 +99,16 @@ if not df.empty:
             title=f"Evolução Temporal - {subtema}",
             labels={'value': 'Valor', 'time': 'Data'}
         )
+
+        fig.update_layout(
+            legend=dict(
+                orientation="h",
+                yanchor="bottom",
+                y=-0.25,  # Isso pode ajustar conforme o tamanho do gráfico e da legenda
+                xanchor="center",
+                x=0.5
+            )
+        )
         st.plotly_chart(fig, use_container_width=True)
 
     else:
