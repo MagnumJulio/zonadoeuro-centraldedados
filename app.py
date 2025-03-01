@@ -87,7 +87,7 @@ if len(df_filtrado) > 0:
         df_filtrado,
         x='time',
         y='value',
-        color=colunas_filtro[0] if colunas_filtro else None,
+        color=colunas_filtro[-2] if colunas_filtro else None,
         markers=True,
         title=f"Evolução Temporal - {subtema}",
         labels={'value': 'Valor', 'time': 'Data'}
