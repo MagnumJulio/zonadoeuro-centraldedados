@@ -1,6 +1,6 @@
-# Dashboard Econômico - Produção Industrial Eurostat
+# Dashboard Econômico
 
-Este é um dashboard econômico que consome dados da API da Eurostat, focado na produção industrial.
+Este é um dashboard econômico que consome dados da API da Eurostat e outros
 
 ## Funcionalidades
 
