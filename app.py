@@ -76,7 +76,7 @@ if not df.empty:
     # Aplicar filtros no DataFrame
     df_filtrado = df.copy()
     for coluna, selecao in filtros.items():
-        if coluna == 'geo':
+        if coluna == 'geo' or coluna == 'partner':
             if selecao:
                 df_filtrado = df_filtrado[df_filtrado[coluna].isin(selecao)]
         elif selecao != "Todos":
