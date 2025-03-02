@@ -161,6 +161,7 @@ else:
     st.warning("Nenhum dado disponível para este subtema.")
 
 
+
 st.write("### Base de Dados")
 csv_buffer = io.StringIO()
 df.to_csv(csv_buffer,index=False)
