@@ -52,6 +52,9 @@ def carregar_dados(tema, subtema):
 # Carregar dados e comentários do subtema selecionado
 df, comentario = carregar_dados(tema, subtema)
 
+# Mostrar DataFrame e Comentário
+st.write("### Comentários")
+st.markdown(comentario)
 
 # Se há dados, aplicar filtros dinâmicos e gerar gráfico
 if not df.empty:
@@ -62,14 +65,21 @@ if not df.empty:
     colunas_filtro = [col for col in df.columns if col not in ['time', 'value']]
 
     for coluna in colunas_filtro:
-        opcoes = ["Todos"] + sorted(df[coluna].dropna().unique().tolist())
-        selecao = st.sidebar.selectbox(f"Filtrar por {coluna}", opcoes)
-        filtros[coluna] = selecao
+        if coluna == 'geo':
+            opcoes = sorted(df[coluna].dropna().unique().tolist())
+            selecao = st.sidebar.multiselect(f"Selecione os países ({coluna})",opcoes,default=opcoes[:3])
+        else:
+            opcoes = ["Todos"] + sorted(df[coluna].dropna().unique().tolist())
+            selecao = st.sidebar.selectbox(f"Filtrar por {coluna}", opcoes)
+            filtros[coluna] = selecao
 
     # Aplicar filtros no DataFrame
     df_filtrado = df.copy()
     for coluna, selecao in filtros.items():
-        if selecao != "Todos":
+        if coluna == 'geo':
+            if selecao:
+                df_filtrado = df_filtrado[df_filtrado[coluna].isin(selecao)]
+        elif selecao != "Todos":
             df_filtrado = df_filtrado[df_filtrado[coluna] == selecao]
 
     # Plotly Gráfico Interativo com Legenda Completa
@@ -111,9 +121,6 @@ if not df.empty:
 else:
     st.warning("Nenhum dado disponível para este subtema.")
 
-# Mostrar DataFrame e Comentário
-st.write("### Comentário Atualizado")
-st.markdown(comentario)
 
 st.write("### Base de Dados")
 st.dataframe(df)
