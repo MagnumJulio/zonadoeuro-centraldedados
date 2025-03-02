@@ -35,7 +35,7 @@ iii-destaque em negrito **dessa forma** na string de resposta.
 ---
 1) Os últimos dados estão indicando aumento, baixa ou estabilização? 
 2) Relacione qualitativamente os últimos dados com a media e a variação geral da série (se atualmente está mais estável/acomodado, se está acima ou abaixo da média,etc. 
-3) analisar as subcategorias dos dados. Máximo 3 parágrafos!! (300 palavras).
+3) analisar as subcategorias dos dados. Máximo 3 parágrafos!! (200 palavras).
 ---
 Modelo de input (exemplo com inflação, mas a estrutura pode ser semelhante com outras variáveis)
 

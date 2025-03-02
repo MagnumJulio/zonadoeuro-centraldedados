@@ -2,6 +2,7 @@ import streamlit as st
 import pandas as pd
 import plotly.express as px
 import os
+import io
 
 
 st.set_page_config(page_title="Dashboard Econômico", layout="wide")
@@ -68,6 +69,7 @@ if not df.empty:
         if coluna == 'geo':
             opcoes = sorted(df[coluna].dropna().unique().tolist())
             selecao = st.sidebar.multiselect(f"Selecione os países ({coluna})",opcoes,default=opcoes[:3])
+            filtros[coluna] = selecao
         elif coluna == 'partner':
             opcoes = sorted(df[coluna].dropna().unique().tolist())
             selecao = st.sidebar.multiselect(f"Selecione os parceiros comerciais ({coluna})", opcoes, default=opcoes[:3])
@@ -79,6 +81,7 @@ if not df.empty:
 
     # Aplicar filtros no DataFrame
     df_filtrado = df.copy()
+
     for coluna, selecao in filtros.items():
         if isinstance(selecao,list):
             if selecao:
@@ -86,11 +89,22 @@ if not df.empty:
         elif selecao != "Todos":
             df_filtrado = df_filtrado[df_filtrado[coluna] == selecao]
 
+    colunas_legenda = []
+    subtitulo_partes = []
+
+    for coluna in colunas_filtro:
+        valores_unicos = df_filtrado[coluna].unique()
+        if len(valores_unicos) == 1:
+            subtitulo_partes.append(f"{coluna.replace('_', ' ').title()}: {valores_unicos[0]}")
+        else:
+            colunas_legenda.append(coluna)
+
+    subtitulo = " | ".join(subtitulo_partes)
+
     # Plotly Gráfico Interativo com Legenda Completa
     if not df_filtrado.empty:
-        if len(colunas_filtro) > 0:
-            # Combina colunas de segmentação para criar uma legenda rica
-            df_filtrado['serie_legenda'] = df_filtrado[colunas_filtro].astype(str).agg(' - '.join, axis=1)
+        if colunas_legenda:
+            df_filtrado['serie_legenda'] = df_filtrado[colunas_legenda].astype(str).agg(' - '.join,axis=1)
             color_coluna = 'serie_legenda'
         else:
             color_coluna = None
@@ -105,6 +119,20 @@ if not df.empty:
             labels={'value': 'Valor', 'time': 'Data'}
         )
 
+        if subtitulo:
+            fig.update_layout(
+                annotations=[dict(
+                    text=subtitulo,
+                    showarrow=False,
+                    x=0.5,
+                    y=1.08,
+                    xref="paper",
+                    yref="paper",
+                    align="center",
+                    font=dict(size=12)
+                )]
+            )
+
         fig.update_layout(
             legend=dict(
                 orientation="h",
@@ -115,9 +143,16 @@ if not df.empty:
             )
         )
         st.plotly_chart(fig, use_container_width=True)
-        st.write("### Dados Filtrados")
-        st.dataframe(df_filtrado)
 
+        st.write("### Dados Filtrados")
+        csv_buffer = io.StringIO()
+        df_filtrado.to_csv(csv_buffer,index=False)
+        st.download_button(
+            label = "Baixar Dados Filtrados (CSV)",
+            data=csv_buffer.getvalue(),
+            file_name=f"{subtema.lower().replace(' ', '_')}_dados_filtrados.csv",
+            mime="text/csv"
+        )
 
     else:
         st.warning("Nenhum dado disponível para os filtros selecionados.")
@@ -127,5 +162,11 @@ else:
 
 
 st.write("### Base de Dados")
-st.dataframe(df)
-
+csv_buffer = io.StringIO()
+df.to_csv(csv_buffer,index=False)
+st.download_button(
+    label = "Baixar Dados (CSV)",
+    data=csv_buffer.getvalue(),
+    file_name=f"{subtema.lower().replace(' ', '_')}_dados.csv",
+    mime="text/csv"
+)
