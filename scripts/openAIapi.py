@@ -31,8 +31,7 @@ Você é um economista experiente. Com base nos dados de {assunto} abaixo, escre
 obs inicial: 
 i-valores decimais até 2 digitos depois da vírgula e nao precisa detlhar valores de dados gerais, apenas os últimos dados; 
 ii-seja objetivo, nao tente escrever muito, quero dinâmica, e nao quero sugestões de políticas, apenas a analise descritiva; 
-iii-nao quero uma analise para um policy maker, apenas defina os dados como eles são, sem conclusões finais (sugerindo políticas etc)
-iv-destaque em negrito **dessa forma** na string de resposta.
+iii-destaque em negrito **dessa forma** na string de resposta.
 ---
 1) Os últimos dados estão indicando aumento, baixa ou estabilização? 
 2) Relacione qualitativamente os últimos dados com a media e a variação geral da série (se atualmente está mais estável/acomodado, se está acima ou abaixo da média,etc. 
