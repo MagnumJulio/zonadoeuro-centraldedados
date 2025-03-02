@@ -68,6 +68,10 @@ if not df.empty:
         if coluna == 'geo':
             opcoes = sorted(df[coluna].dropna().unique().tolist())
             selecao = st.sidebar.multiselect(f"Selecione os países ({coluna})",opcoes,default=opcoes[:3])
+        elif coluna == 'partner':
+            opcoes = sorted(df[coluna].dropna().unique().tolist())
+            selecao = st.sidebar.multiselect(f"Selecione os parceiros comerciais ({coluna})", opcoes, default=opcoes[:3])
+            filtros[coluna] = selecao
         else:
             opcoes = ["Todos"] + sorted(df[coluna].dropna().unique().tolist())
             selecao = st.sidebar.selectbox(f"Filtrar por {coluna}", opcoes)
@@ -76,7 +80,7 @@ if not df.empty:
     # Aplicar filtros no DataFrame
     df_filtrado = df.copy()
     for coluna, selecao in filtros.items():
-        if coluna == 'geo' or coluna == 'partner':
+        if isinstance(selecao,list):
             if selecao:
                 df_filtrado = df_filtrado[df_filtrado[coluna].isin(selecao)]
         elif selecao != "Todos":
