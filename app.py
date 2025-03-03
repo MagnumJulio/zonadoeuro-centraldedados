@@ -5,6 +5,9 @@ import os
 import io
 
 st.set_page_config(page_title="Dashboard Econômico", layout="wide")
+
+st.sidebar.image("img/Logomarca Impactus - Azul 2.png", width=180)
+
 st.title(f"Central de dados - Zona do Euro")
 
 def mapear_temas_e_subtemas(base_dir="datasets"):
