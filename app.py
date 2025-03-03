@@ -26,7 +26,7 @@ with st.sidebar:
     st.write("""
     Este dashboard apresenta **dados econômicos da Zona do Euro**, 
     organizados por temas e subtemas, com filtros dinâmicos e
-    gráficos interativos. Projeto de membros do departamento de Macro da Impactus UFRJ
+    gráficos interativos. Projeto de membros do departamento de Macro Research da Impactus UFRJ.
     """)
 
     st.write("## 🕒 Última Atualização")
