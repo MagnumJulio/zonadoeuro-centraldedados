@@ -4,7 +4,6 @@ import plotly.express as px
 import os
 import io
 
-
 st.set_page_config(page_title="Dashboard Econômico", layout="wide")
 st.title(f"Central de dados - Zona do Euro")
 
