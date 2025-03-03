@@ -1,5 +1,6 @@
 import streamlit as st
 import openai
+import datetime
 
 # OpenAI
 
@@ -66,6 +67,9 @@ retração de 0,2%, o que alimenta a narrativa de estagflação
         
     )
 
+    hoje = datetime.date.today().strftime("%Y-%m-%d")
+    with open("datasets/last_update.txt", "w", encoding="utf-8") as f:
+        f.write(hoje)
     return resposta.choices[0].message.content
     
 
