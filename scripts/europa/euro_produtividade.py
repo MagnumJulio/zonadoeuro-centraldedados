@@ -11,7 +11,7 @@ from openAIapi import analise_descritiva
 
 url = "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/namq_10_lp_ulc?format=JSON&sinceTimePeriod=2019-Q1&geo=EA20&geo=DE&geo=FR&geo=IT&unit=I20&unit=PCH_PRE&unit=PCH_SM&s_adj=SCA&na_item=RLPR_PER&na_item=RLPR_HW&lang=en"
 topico,subtopico = "mercado_de_trabalho", "produtividade"
-classificacoes = ['na_item', 'geo']
+classificacoes = ['na_item', 'unit', 'geo']
 
 def atualizar():
 
