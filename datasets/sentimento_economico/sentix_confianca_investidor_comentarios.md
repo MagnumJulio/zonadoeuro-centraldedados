@@ -1,0 +1,5 @@
+Os dados mais recentes do índice de confiança do investidor Sentix mostram uma melhoria, com o valor **atual de -12.7 em fevereiro de 2025**, comparado ao **-17.7 registrado em janeiro de 2025**. Isso indica um aumento na confiança dos investidores. A previsão para fevereiro de 2025 era de -16.4, o que significa que o dado atual superou as expectativas.
+
+Em um contexto mais amplo, observa-se que o índice de confiança tem oscilado ao longo do tempo, mas os valores atuais ainda estão abaixo da média histórica, que varia significativamente. No entanto, os dados recentes sugerem uma tendência de recuperação, com os índices se aproximando dos níveis de 2024, embora ainda não tenham atingido patamares positivos.
+
+Analisando as subcategorias, o dado **atual de fevereiro de 2025 de -12.7 representa uma melhoria em relação ao forecast de -16.4**, sugerindo que a percepção dos investidores é mais otimista do que o esperado. Em janeiro de 2025, tanto o dado atual quanto o previsto estavam alinhados em -17.7, refletindo um período de maior estabilidade. O avanço recente pode indicar um aumento de confiança no mercado, apesar de ainda estar em território negativo.

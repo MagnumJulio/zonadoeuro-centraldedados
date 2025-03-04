@@ -75,7 +75,7 @@ for i, tema in enumerate(abas):
 
             csv_path = f"datasets/{tema_path}/{subtema_path}_historico.csv"
             md_path = f"datasets/{tema_path}/{subtema_path}_comentarios.md"
-
+            # print(csv_path+"\n"+md_path)
             try:
                 df = pd.read_csv(csv_path)
                 df['time'] = pd.to_datetime(df['time'], errors='coerce').dt.date
@@ -89,7 +89,8 @@ for i, tema in enumerate(abas):
             return df, comentario
 
         df, comentario = carregar_dados(tema, subtema)
-
+        if tema == "Sentimento Economico":
+            print(df)
         st.write("### Comentários")
         st.markdown(comentario)
 

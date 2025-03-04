@@ -11,19 +11,23 @@ def analise_descritiva(df, assunto, colunas_classificadoras):
     # Encontrar as duas últimas datas
     ultimas_datas = df['time'].tail(4)
 
-    # Filtrar usando loc[]
-    df_filtrado = df.loc[df['time'].isin(ultimas_datas)]
 
-    # Estatísticas gerais
-    str1 = df.describe().to_string()
-    describe_historico = df.groupby(colunas_classificadoras)['value'].describe()
-    str1 = describe_historico.to_string()
-    print(describe_historico)
+    if (colunas_classificadoras):
+        # Estatísticas gerais
+        str1 = df.describe().to_string()
+        describe_historico = df.groupby(colunas_classificadoras)['value'].describe()
+        str1 = describe_historico.to_string()
+        print(describe_historico)
 
-    # Estatísticas por grupo (dinâmico)
-    describe_grupo = df_filtrado.groupby(colunas_classificadoras)['value'].describe()
-    str2 = describe_grupo.to_string()
-    print(describe_grupo)
+        # Estatísticas por grupo (dinâmico)
+        describe_grupo = df_filtrado.groupby(colunas_classificadoras)['value'].describe()
+        str2 = describe_grupo.to_string()
+        print(describe_grupo)
+    else:
+        df_filtrado = df.loc[df['time'].isin(ultimas_datas)]
+        str1 = df.to_string()
+        str2 = df_filtrado.to_string()
+
 
     texto = 'Describe dados gerais:\n'+str1+'\nDescribe dados mais recentes:\n'+str2+'\nUltimos dois meses por cada decomposição:\n'+df_filtrado.to_string(index=False)
 
