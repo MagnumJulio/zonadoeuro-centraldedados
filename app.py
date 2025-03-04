@@ -22,7 +22,7 @@ with st.sidebar:
     else:
         st.warning("Logomarca não encontrada. Verifique o caminho e o arquivo.")
 
-    st.write("## Central de Dados Econômicos")
+    st.write("## Central de Dados Econômicos (beta)")
     st.write("""
     Este dashboard apresenta **dados econômicos da Zona do Euro**, 
     organizados por temas e subtemas, com filtros dinâmicos e
@@ -35,7 +35,7 @@ with st.sidebar:
     st.write("## 🔗 Links Úteis")
     st.markdown("[Eurostat - Site Oficial](https://ec.europa.eu/eurostat)")
     st.markdown("[Relatório do BCE](https://www.ecb.europa.eu/pub/economic-bulletin/html/index.en.html)")
-    st.markdown("[GitHub do Projeto](https://github.com/seu-repo)")
+    st.markdown("[GitHub do Projeto](https://github.com)")
 
 
 st.title(f"Central de dados - Zona do Euro")
