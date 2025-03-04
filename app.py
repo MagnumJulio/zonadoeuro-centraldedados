@@ -3,6 +3,8 @@ import pandas as pd
 import plotly.express as px
 import os
 import io
+from scripts.graficos import gerar_grafico_padronizado
+
 
 st.set_page_config(page_title="Dashboard Econômico", layout="wide")
 
@@ -187,6 +189,21 @@ for i, tema in enumerate(abas):
                     file_name=f"{subtema.lower().replace(' ', '_')}_dados_filtrados.csv",
                     mime="text/csv"
                 )
+
+                # Monta título sugerido (subtema + classificações únicas)
+                titulo_sugerido = f"Evolução Temporal - {subtema}"
+                if subtitulo_partes:
+                    titulo_sugerido += "\n" + " | ".join(subtitulo_partes)
+
+                # Input editável de título
+                titulo_final = st.text_input("Título do Gráfico", value=titulo_sugerido, key=f"titulo_{tema}_{subtema}")
+
+                # Janela temporal e botão de geração
+                min_date = st.date_input("Data inicial", value=df_filtrado['time'].min(), min_value=df_filtrado['time'].min(), max_value=df_filtrado['time'].max(), key=f"min_date_{tema}_{subtema}")
+                max_date = st.date_input("Data final", value=df_filtrado['time'].max(), min_value=df_filtrado['time'].min(), max_value=df_filtrado['time'].max(), key=f"max_date_{tema}_{subtema}")
+
+                if st.button("Gerar Gráfico Padronizado", key=f"btn_grafico_{tema}_{subtema}"):
+                    gerar_grafico_padronizado(df_filtrado, subtema, min_date, max_date, titulo=titulo_final)
 
             else:
                 st.warning("Nenhum dado disponível para os filtros selecionados.")
