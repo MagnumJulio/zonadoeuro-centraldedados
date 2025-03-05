@@ -1,4 +1,3 @@
-import streamlit as st
 import requests
 import pandas as pd
 import itertools
@@ -16,10 +15,10 @@ classificacoes = ['sex', 'geo']
 def atualizar():
 
     df = puxar_dados(url)
-    comentario = analise_descritiva(df, ' '.join(subtopico.split('_')),classificacoes)
-
+    # comentario = analise_descritiva(df, ' '.join(subtopico.split('_')),classificacoes)
+    print(df)
     salvar_base(topico, subtopico, df)
-    salvar_comentario(topico, subtopico, comentario)
+    # salvar_comentario(topico, subtopic    print(df)o, comentario)
 
 
 if __name__ == "__main__":

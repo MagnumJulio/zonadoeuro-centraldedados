@@ -1,6 +1,7 @@
 import streamlit as st
 import openai
 import datetime
+import pandas as pd
 
 # OpenAI
 
@@ -8,11 +9,17 @@ def analise_descritiva(df, assunto, colunas_classificadoras):
     api_key = st.secrets["OPENAI_API_KEY"]
     client = openai.OpenAI(api_key=api_key)
 
+    print(assunto)
+    if assunto == "hicp" and "geo" in df.columns:
+        df = df.loc[df['geo'] == "Euro area – 20 countries (from 2023)"]
+
+
     # Encontrar as duas últimas datas
-    ultimas_datas = df['time'].tail(4)
+    ultimas_datas = df['time'].tail(2)
 
 
     if (colunas_classificadoras):
+        df_filtrado = df.copy()
         # Estatísticas gerais
         str1 = df.describe().to_string()
         describe_historico = df.groupby(colunas_classificadoras)['value'].describe()
@@ -28,8 +35,7 @@ def analise_descritiva(df, assunto, colunas_classificadoras):
         str1 = df.to_string()
         str2 = df_filtrado.to_string()
 
-
-    texto = 'Describe dados gerais:\n'+str1+'\nDescribe dados mais recentes:\n'+str2+'\nUltimos dois meses por cada decomposição:\n'+df_filtrado.to_string(index=False)
+    texto = 'Describe dados gerais:\n'+str1+'\nDescribe dados mais recentes:\n'+str2+'\nUltimos meses por cada decomposição:\n'+df_filtrado.to_string(index=False)
 
     prompt = f"""
 Você é um economista experiente. Com base nos dados de {assunto} abaixo, escreva uma breve análise descritiva para incluir em um relatório econômico.
@@ -39,8 +45,9 @@ ii-seja objetivo, nao tente escrever muito, quero dinâmica, e nao quero sugest�
 iii-destaque em negrito **dessa forma** na string de resposta.
 ---
 1) Os últimos dados estão indicando aumento, baixa ou estabilização? 
+1.1) É muito importante que você não confunda direções (alta/baixa). Valores negativos indicam piora caso aumentem seu módulo.
 2) Relacione qualitativamente os últimos dados com a media e a variação geral da série (se atualmente está mais estável/acomodado, se está acima ou abaixo da média,etc. 
-3) analisar as subcategorias dos dados. Máximo 3 parágrafos!! (200 palavras).
+3) analisar as subcategorias dos dados. Máximo 2 parágrafos!! (100 palavras).
 ---
 Modelo de input (exemplo com inflação, mas a estrutura pode ser semelhante com outras variáveis)
 

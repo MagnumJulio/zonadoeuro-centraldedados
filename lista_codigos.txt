@@ -1,0 +1,15 @@
+/scripts/europa/alemanha_encomenda_a_industria.py
+/scripts/europa/alemanha_gfk_clima_consumidor.py
+/scripts/europa/alemanha_ifo_business_climate.py
+/scripts/europa/euro_balancacomercial.py
+/scripts/europa/euro_confianca_do_consumidor.py
+/scripts/europa/euro_emprego.py
+/scripts/europa/euro_HICP.py
+/scripts/europa/euro_pib.py
+/scripts/europa/euro_producaoindustrial.py
+/scripts/europa/euro_produtividade.py
+/scripts/europa/euro_sentix_confianca_investidor.py
+/scripts/europa/euro_taxadesemprego.py
+/scripts/europa/euro_vendasvarejo.py
+/scripts/europa/extracao_eurostat.py
+/scripts/europa/extracao_investing.py

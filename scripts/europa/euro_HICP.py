@@ -1,4 +1,3 @@
-import streamlit as st
 import requests
 import pandas as pd
 import itertools
@@ -9,7 +8,7 @@ sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 from openAIapi import analise_descritiva
 
 
-url = "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/prc_hicp_manr?format=JSON&sinceTimePeriod=2019-01&geo=EA20&geo=DE&geo=FR&geo=IT&unit=RCH_A&coicop=CP00&coicop=FOOD&coicop=IGD_NNRG&coicop=NRG&coicop=SERV&coicop=TOT_X_NRG_FOOD&lang=en"
+url = "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/prc_hicp_manr?format=JSON&sinceTimePeriod=2019-01&geo=EA20&geo=DE&unit=RCH_A&coicop=CP00&coicop=FOOD&coicop=IGD_NNRG&coicop=NRG&coicop=SERV&coicop=TOT_X_NRG_FOOD&lang=en"
 topico,subtopico = "inflacao", "hicp"
 classificacoes = ['coicop', 'geo']
 

@@ -1,11 +1,10 @@
-import streamlit as st
 import pandas as pd
 import os
 import sys
 from datetime import datetime
 
 # Importando do extracao_investing.py
-from extracao_investing import extrair_tabela_investing
+from extracao_investing import extrair_tabela_investing, salvar_base, salvar_comentario
 
 # Caminho dinâmico para importar openAIapi
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
@@ -19,25 +18,6 @@ url = "https://www.investing.com/economic-calendar/gfk-german-consumer-climate-3
 
 # Colunas/classificações para análise descritiva (nesse caso, só tem o valor mesmo)
 classificacoes = []  # Se quiser adicionar algo no futuro (exemplo: país), aqui ficaria
-
-
-def salvar_base(topico, subtopico, df, pasta_base="datasets"):
-    """Salva a base extraída como CSV na pasta correta."""
-    tema_path = os.path.join(pasta_base, topico)
-    os.makedirs(tema_path, exist_ok=True)
-
-    arquivo_csv = os.path.join(tema_path, f"{subtopico}_historico.csv")
-    df.to_csv(arquivo_csv, index=False)
-
-
-def salvar_comentario(topico, subtopico, comentario, pasta_base="datasets"):
-    """Salva o comentário como arquivo .md na pasta correta."""
-    tema_path = os.path.join(pasta_base, topico)
-    os.makedirs(tema_path, exist_ok=True)
-
-    arquivo_md = os.path.join(tema_path, f"{subtopico}_comentarios.md")
-    with open(arquivo_md, "w", encoding="utf-8") as f:
-        f.write(comentario)
 
 
 def atualizar():

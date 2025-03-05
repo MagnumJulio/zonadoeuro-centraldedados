@@ -8,6 +8,26 @@ from time import sleep
 import re
 
 
+
+def salvar_base(topico, subtopico, df, pasta_base="datasets"):
+    """Salva a base extraída como CSV na pasta correta."""
+    tema_path = os.path.join(pasta_base, topico)
+    os.makedirs(tema_path, exist_ok=True)
+
+    arquivo_csv = os.path.join(tema_path, f"{subtopico}_historico.csv")
+    df.to_csv(arquivo_csv, index=False)
+
+
+def salvar_comentario(topico, subtopico, comentario, pasta_base="datasets"):
+    """Salva o comentário como arquivo .md na pasta correta."""
+    tema_path = os.path.join(pasta_base, topico)
+    os.makedirs(tema_path, exist_ok=True)
+
+    arquivo_md = os.path.join(tema_path, f"{subtopico}_comentarios.md")
+    with open(arquivo_md, "w", encoding="utf-8") as f:
+        f.write(comentario)
+
+
 def atualizar_last_update(tema, subtema, pasta_base="datasets"):
     """Atualiza o arquivo last_update.txt com a última data de atualização."""
     arquivo_last_update = os.path.join(pasta_base, "last_update.txt")
@@ -91,14 +111,15 @@ def extrair_tabela_investing(url, tema, subtema, pasta_base="datasets"):
         except PlaywrightTimeoutError:
             print("✅ Nenhum pop-up de cookies encontrado.")
 
-        for i in range(15):
+        maximo = 2
+        for i in range(maximo):
             rnumber = random.randint(4, 9)
             try:
                 show_more_button = page.locator(f'xpath={xpath_show_more}')
                 if show_more_button.is_visible():
                     show_more_button.click()
                     sleep(rnumber)
-                    print(f"🔄 Show more clicado ({i+1}/15)")
+                    print(f"🔄 Show more clicado ({i+1}/{maximo})")
                     page.wait_for_timeout(1500)
                 else:
                     print("✅ Botão 'Show more' não visível, seguindo...")

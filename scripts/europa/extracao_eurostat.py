@@ -1,22 +1,6 @@
 import requests
 import pandas as pd
 import itertools
-# import tkinter as tk
-# from tkinter import simpledialog
-# import pyperclip
-# # Criar janela para pedir o link da API
-# def pedir_link():
-#     root = tk.Tk()
-#     root.withdraw()  # Esconde a janela principal
-#     link = simpledialog.askstring("Link da Eurostat", "Cole o link da API da Eurostat:")
-#     return link
-
-# # Pede o link via janela
-# url = pedir_link()
-
-# if not url:
-#     print("Nenhum link informado. Encerrando.")
-#     exit()
 
 def puxar_dados(url):
 
@@ -82,24 +66,3 @@ def salvar_comentario(topico,subtopico, texto):
 def salvar_base(topico,subtopico, df):
     df.to_csv(f"D:/Impactus/Projetos-Impactus/pyimpactus/meu-dashboard1/meu-dashboard1/datasets/{topico}/{subtopico}_historico.csv", index=False)
 
-
-# # Exportar para Excel
-# df.to_excel('eurostat_production_data1.1.xlsx', index=False)
-
-# # OpenAI
-
-# # Encontrar as duas últimas datas
-# ultimas_datas = df['time'].tail(3)
-
-# # Filtrar usando loc[]
-# df_filtrado = df.loc[df['time'].isin(ultimas_datas)]
-
-# # print(df_filtrado.to_string(index=False))
-
-# # Exibir preview
-# str1 = df.describe().to_string()
-# str2 = df.tail().describe().to_string()
-# texto = 'Describe dados gerais:\n'+str1+'\nDescribe dados mais recentes:\n'+str2+'\nUltimos dois meses por cada decomposição:\n'+df_filtrado.to_string(index=False)
-# pyperclip.copy(texto)
-
-# print("Arquivo salvo como 'eurostat_production_data1.1.xlsx'")
