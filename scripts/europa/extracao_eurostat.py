@@ -3,7 +3,6 @@ import pandas as pd
 import itertools
 
 def puxar_dados(url):
-
     # Puxar dados
     response = requests.get(url)
     response.raise_for_status()

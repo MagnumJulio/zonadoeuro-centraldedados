@@ -11,7 +11,7 @@ def analise_descritiva(df, assunto, colunas_classificadoras):
 
     print(assunto)
     if assunto == "hicp" and "geo" in df.columns:
-        df = df.loc[df['geo'] == "Euro area – 20 countries (from 2023)"]
+        df = df.loc[df['geo'] == "Euro area (EA11-1999, EA12-2001, EA13-2007, EA15-2008, EA16-2009, EA17-2011, EA18-2014, EA19-2015, EA20-2023)"]
 
 
     # Encontrar as duas últimas datas
