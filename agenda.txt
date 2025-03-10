@@ -1,4 +1,3 @@
-scripts\europa\alemanha_ifo_business_climate.py
-scripts\europa\euro_HICP.py
-scripts\europa\euro_pib.py
-scripts\europa\euro_confianca_do_consumidor.py
+scripts\europa\alemanha_encomenda_a_industria.py
+scripts\europa\euro_vendasvarejo.py
+

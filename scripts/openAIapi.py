@@ -10,16 +10,20 @@ def analise_descritiva(df, assunto, colunas_classificadoras):
     client = openai.OpenAI(api_key=api_key)
 
     print(assunto)
-    if assunto == "hicp" and "geo" in df.columns:
-        df = df.loc[df['geo'] == "Euro area (EA11-1999, EA12-2001, EA13-2007, EA15-2008, EA16-2009, EA17-2011, EA18-2014, EA19-2015, EA20-2023)"]
-
-
+    if assunto in ["hicp", "vendas no varejo"] and "geo" in df.columns:
+        df = df.loc[df['geo'].isin([
+            "Euro area (EA11-1999, EA12-2001, EA13-2007, EA15-2008, EA16-2009, EA17-2011, EA18-2014, EA19-2015, EA20-2023)", 
+            "Euro area – 20 countries (from 2023)"
+        ])]
+        if assunto == "vendas no varejo":
+            df = df.loc[df['unit'] == "Percentage change compared to same period in previous year"]
+    
     # Encontrar as duas últimas datas
     ultimas_datas = df['time'].tail(2)
 
 
     if (colunas_classificadoras):
-        df_filtrado = df.copy()
+        df_filtrado = df.loc[df['time'].isin(ultimas_datas)]
         # Estatísticas gerais
         str1 = df.describe().to_string()
         describe_historico = df.groupby(colunas_classificadoras)['value'].describe()
