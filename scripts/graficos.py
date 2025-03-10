@@ -17,7 +17,7 @@ def gerar_legenda_e_titulo(df, subtema):
                 titulo_partes.append(f"{coluna.replace('_', ' ').title()}: {valores_unicos[0]}")
             else:
                 colunas_legenda.append(coluna)
-        titulo = f"Evolução Temporal - {subtema}"
+        titulo = f"{subtema}"
         if titulo_partes:
             titulo += "\n" + " | ".join(titulo_partes)
         return df, titulo
@@ -61,7 +61,7 @@ def gerar_grafico_padronizado(df, subtema, data_inicial=None, data_final=None, t
         dados_serie = df[df['serie_legenda'] == serie]
         ax.plot(dados_serie['time'], dados_serie['value'], label=serie, color=cor, linewidth=2)
     
-    ax.set_title(titulo, fontsize=14, fontweight='bold', color='black', pad=25)
+    ax.set_title(titulo, fontsize=14, fontweight='bold', color='black', pad=30)
     ax.set_xlabel("Data", fontsize=10)
     ax.set_ylabel("Valor", fontsize=10)
     ax.grid(True, linestyle='--', linewidth=0.5)
@@ -69,7 +69,7 @@ def gerar_grafico_padronizado(df, subtema, data_inicial=None, data_final=None, t
     ax.legend(
         title="Legenda",
         loc="upper center",
-        bbox_to_anchor=(0.5, 1.08),  # Ajusta a posição da legenda logo abaixo do título
+        bbox_to_anchor=(0.5, 1.15),  # Ajusta a posição para evitar sobreposição
         ncol=min(len(series_unicas), 3),
         frameon=False,
         fontsize=9
