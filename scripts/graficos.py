@@ -43,7 +43,7 @@ def gerar_legenda_e_titulo(df, subtema):
         df['serie_legenda'] = 'Série Única'
     return df, titulo
 
-def gerar_grafico_padronizado(df, subtema, data_inicial=None, data_final=None, titulo=None):
+def gerar_grafico_padronizado(df, subtema, data_inicial=None, data_final=None, titulo=None, label=None):
     if df.empty:
         st.error("Nenhum dado disponível para gerar o gráfico.")
         return
@@ -61,13 +61,18 @@ def gerar_grafico_padronizado(df, subtema, data_inicial=None, data_final=None, t
         dados_serie = df[df['serie_legenda'] == serie]
         ax.plot(dados_serie['time'], dados_serie['value'], label=serie, color=cor, linewidth=2)
     
-    ax.set_title(titulo, fontsize=14, fontweight='bold', color='black', pad=30)
+    # Configuração do título principal
+    ax.set_title(titulo, fontsize=14, fontweight='bold', color='black', pad=10)
+    
+    # Adição do label abaixo do título
+    if label:
+        fig.text(0.5, 0.91, label, ha='center', fontsize=10, color='darkgray', style='italic')
+    
     ax.set_xlabel("Data", fontsize=10)
     ax.set_ylabel("Valor", fontsize=10)
     ax.grid(False)
     
     ax.legend(
-        title="Legenda",
         loc="upper center",
         ncol=min(len(series_unicas), 3),
         frameon=False,
@@ -77,3 +82,12 @@ def gerar_grafico_padronizado(df, subtema, data_inicial=None, data_final=None, t
     fig.text(0.5, -0.05, "Fonte: Eurostat, Impactus UFRJ", ha='center', fontsize=9, color='gray')
     
     st.pyplot(fig)
+
+# Exemplo de uso
+# df_exemplo = pd.DataFrame({
+#     'time': pd.date_range(start='2020-01-01', periods=10, freq='M'),
+#     'value': [10, 15, 13, 17, 20, 18, 22, 25, 23, 28],
+#     'regiao': ['Europa', 'Europa', 'Europa', 'Europa', 'Europa', 'Europa', 'Europa', 'Europa', 'Europa', 'Europa'],
+#     'industria': ['Automotiva', 'Automotiva', 'Automotiva', 'Automotiva', 'Automotiva', 'Automotiva', 'Automotiva', 'Automotiva', 'Automotiva', 'Automotiva']
+# })
+# gerar_grafico_padronizado(df_exemplo, "Exportações", label="Crescimento Trimestral (2020-2021)")
