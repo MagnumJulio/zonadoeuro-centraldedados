@@ -64,12 +64,11 @@ def gerar_grafico_padronizado(df, subtema, data_inicial=None, data_final=None, t
     ax.set_title(titulo, fontsize=14, fontweight='bold', color='black', pad=30)
     ax.set_xlabel("Data", fontsize=10)
     ax.set_ylabel("Valor", fontsize=10)
-    ax.grid(True, linestyle='--', linewidth=0.5)
+    ax.grid(False)
     
     ax.legend(
         title="Legenda",
         loc="upper center",
-        bbox_to_anchor=(0.5, 1.15),  # Ajusta a posição para evitar sobreposição
         ncol=min(len(series_unicas), 3),
         frameon=False,
         fontsize=9
