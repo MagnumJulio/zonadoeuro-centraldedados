@@ -1,4 +1,1 @@
-scripts\europa\alemanha_encomenda_a_industria.py
-scripts\europa\euro_vendasvarejo.py
-scripts\europa\euro_producaoindustrial.py
-scripts\europa\euro_sentix_confianca_investidor.py
+scripts\europa\euro_balancacomercial.py
