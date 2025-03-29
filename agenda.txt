@@ -1,1 +1,1 @@
-scripts\europa\euro_balancacomercial.py
+D:\Impactus\Projetos-Impactus\pyimpactus\meu-dashboard1\meu-dashboard1\scripts\europa\euro_taxadesemprego.py
