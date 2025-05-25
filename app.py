@@ -91,8 +91,8 @@ for i, tema in enumerate(abas):
             return df, comentario
 
         df, comentario = carregar_dados(tema, subtema)
-        if tema == "Sentimento Economico":
-            print(df)
+        # if tema == "Sentimento Economico":
+        #     print(df)
         st.write("### Comentários")
         st.markdown(comentario)
 

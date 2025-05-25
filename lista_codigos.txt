@@ -11,5 +11,3 @@
 /scripts/europa/euro_sentix_confianca_investidor.py
 /scripts/europa/euro_taxadesemprego.py
 /scripts/europa/euro_vendasvarejo.py
-/scripts/europa/extracao_eurostat.py
-/scripts/europa/extracao_investing.py

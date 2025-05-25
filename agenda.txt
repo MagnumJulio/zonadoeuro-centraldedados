@@ -1,1 +1,14 @@
 D:\Impactus\Projetos-Impactus\pyimpactus\meu-dashboard1\meu-dashboard1\scripts\europa\euro_taxadesemprego.py
+D:\Impactus\Projetos-Impactus\pyimpactus\meu-dashboard1\meu-dashboard1\scripts\europa\alemanha_encomenda_a_industria.py
+D:\Impactus\Projetos-Impactus\pyimpactus\meu-dashboard1\meu-dashboard1\scripts\europa\alemanha_gfk_clima_consumidor.py
+D:\Impactus\Projetos-Impactus\pyimpactus\meu-dashboard1\meu-dashboard1\scripts\europa\alemanha_ifo_business_climate.py
+D:\Impactus\Projetos-Impactus\pyimpactus\meu-dashboard1\meu-dashboard1\scripts\europa\euro_balancacomercial.py
+D:\Impactus\Projetos-Impactus\pyimpactus\meu-dashboard1\meu-dashboard1\scripts\europa\euro_confianca_do_consumidor.py
+D:\Impactus\Projetos-Impactus\pyimpactus\meu-dashboard1\meu-dashboard1\scripts\europa\euro_emprego.py
+D:\Impactus\Projetos-Impactus\pyimpactus\meu-dashboard1\meu-dashboard1\scripts\europa\euro_HICP.py
+D:\Impactus\Projetos-Impactus\pyimpactus\meu-dashboard1\meu-dashboard1\scripts\europa\euro_pib.py
+D:\Impactus\Projetos-Impactus\pyimpactus\meu-dashboard1\meu-dashboard1\scripts\europa\euro_producaoindustrial.py
+D:\Impactus\Projetos-Impactus\pyimpactus\meu-dashboard1\meu-dashboard1\scripts\europa\euro_produtividade.py
+D:\Impactus\Projetos-Impactus\pyimpactus\meu-dashboard1\meu-dashboard1\scripts\europa\euro_sentix_confianca_investidor.py
+D:\Impactus\Projetos-Impactus\pyimpactus\meu-dashboard1\meu-dashboard1\scripts\europa\euro_taxadesemprego.py
+D:\Impactus\Projetos-Impactus\pyimpactus\meu-dashboard1\meu-dashboard1\scripts\europa\euro_vendasvarejo.py

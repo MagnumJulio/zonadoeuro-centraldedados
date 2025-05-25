@@ -72,7 +72,9 @@ Monthly,Annual rate of change,All-items HICP,"Euro area (EA11-1999, EA12-2001, E
 Monthly,Annual rate of change,All-items HICP,"Euro area (EA11-1999, EA12-2001, EA13-2007, EA15-2008, EA16-2009, EA17-2011, EA18-2014, EA19-2015, EA20-2023)",2024-11-01,2.2
 Monthly,Annual rate of change,All-items HICP,"Euro area (EA11-1999, EA12-2001, EA13-2007, EA15-2008, EA16-2009, EA17-2011, EA18-2014, EA19-2015, EA20-2023)",2024-12-01,2.4
 Monthly,Annual rate of change,All-items HICP,"Euro area (EA11-1999, EA12-2001, EA13-2007, EA15-2008, EA16-2009, EA17-2011, EA18-2014, EA19-2015, EA20-2023)",2025-01-01,2.5
-Monthly,Annual rate of change,All-items HICP,"Euro area (EA11-1999, EA12-2001, EA13-2007, EA15-2008, EA16-2009, EA17-2011, EA18-2014, EA19-2015, EA20-2023)",2025-02-01,2.4
+Monthly,Annual rate of change,All-items HICP,"Euro area (EA11-1999, EA12-2001, EA13-2007, EA15-2008, EA16-2009, EA17-2011, EA18-2014, EA19-2015, EA20-2023)",2025-02-01,2.3
+Monthly,Annual rate of change,All-items HICP,"Euro area (EA11-1999, EA12-2001, EA13-2007, EA15-2008, EA16-2009, EA17-2011, EA18-2014, EA19-2015, EA20-2023)",2025-03-01,2.2
+Monthly,Annual rate of change,All-items HICP,"Euro area (EA11-1999, EA12-2001, EA13-2007, EA15-2008, EA16-2009, EA17-2011, EA18-2014, EA19-2015, EA20-2023)",2025-04-01,2.2
 Monthly,Annual rate of change,All-items HICP,Germany,2019-01-01,1.7
 Monthly,Annual rate of change,All-items HICP,Germany,2019-02-01,1.7
 Monthly,Annual rate of change,All-items HICP,Germany,2019-03-01,1.4
@@ -146,7 +148,9 @@ Monthly,Annual rate of change,All-items HICP,Germany,2024-10-01,2.4
 Monthly,Annual rate of change,All-items HICP,Germany,2024-11-01,2.4
 Monthly,Annual rate of change,All-items HICP,Germany,2024-12-01,2.8
 Monthly,Annual rate of change,All-items HICP,Germany,2025-01-01,2.8
-Monthly,Annual rate of change,All-items HICP,Germany,2025-02-01,2.8
+Monthly,Annual rate of change,All-items HICP,Germany,2025-02-01,2.6
+Monthly,Annual rate of change,All-items HICP,Germany,2025-03-01,2.3
+Monthly,Annual rate of change,All-items HICP,Germany,2025-04-01,2.2
 Monthly,Annual rate of change,All-items HICP,France,2019-01-01,1.4
 Monthly,Annual rate of change,All-items HICP,France,2019-02-01,1.6
 Monthly,Annual rate of change,All-items HICP,France,2019-03-01,1.3
@@ -221,6 +225,8 @@ Monthly,Annual rate of change,All-items HICP,France,2024-11-01,1.7
 Monthly,Annual rate of change,All-items HICP,France,2024-12-01,1.8
 Monthly,Annual rate of change,All-items HICP,France,2025-01-01,1.8
 Monthly,Annual rate of change,All-items HICP,France,2025-02-01,0.9
+Monthly,Annual rate of change,All-items HICP,France,2025-03-01,0.9
+Monthly,Annual rate of change,All-items HICP,France,2025-04-01,0.9
 Monthly,Annual rate of change,All-items HICP,Italy,2019-01-01,0.9
 Monthly,Annual rate of change,All-items HICP,Italy,2019-02-01,1.1
 Monthly,Annual rate of change,All-items HICP,Italy,2019-03-01,1.1
@@ -295,6 +301,8 @@ Monthly,Annual rate of change,All-items HICP,Italy,2024-11-01,1.5
 Monthly,Annual rate of change,All-items HICP,Italy,2024-12-01,1.4
 Monthly,Annual rate of change,All-items HICP,Italy,2025-01-01,1.7
 Monthly,Annual rate of change,All-items HICP,Italy,2025-02-01,1.7
+Monthly,Annual rate of change,All-items HICP,Italy,2025-03-01,2.1
+Monthly,Annual rate of change,All-items HICP,Italy,2025-04-01,2.0
 Monthly,Annual rate of change,Food including alcohol and tobacco,"Euro area (EA11-1999, EA12-2001, EA13-2007, EA15-2008, EA16-2009, EA17-2011, EA18-2014, EA19-2015, EA20-2023)",2019-01-01,1.8
 Monthly,Annual rate of change,Food including alcohol and tobacco,"Euro area (EA11-1999, EA12-2001, EA13-2007, EA15-2008, EA16-2009, EA17-2011, EA18-2014, EA19-2015, EA20-2023)",2019-02-01,2.3
 Monthly,Annual rate of change,Food including alcohol and tobacco,"Euro area (EA11-1999, EA12-2001, EA13-2007, EA15-2008, EA16-2009, EA17-2011, EA18-2014, EA19-2015, EA20-2023)",2019-03-01,1.8
@@ -369,6 +377,8 @@ Monthly,Annual rate of change,Food including alcohol and tobacco,"Euro area (EA1
 Monthly,Annual rate of change,Food including alcohol and tobacco,"Euro area (EA11-1999, EA12-2001, EA13-2007, EA15-2008, EA16-2009, EA17-2011, EA18-2014, EA19-2015, EA20-2023)",2024-12-01,2.6
 Monthly,Annual rate of change,Food including alcohol and tobacco,"Euro area (EA11-1999, EA12-2001, EA13-2007, EA15-2008, EA16-2009, EA17-2011, EA18-2014, EA19-2015, EA20-2023)",2025-01-01,2.3
 Monthly,Annual rate of change,Food including alcohol and tobacco,"Euro area (EA11-1999, EA12-2001, EA13-2007, EA15-2008, EA16-2009, EA17-2011, EA18-2014, EA19-2015, EA20-2023)",2025-02-01,2.7
+Monthly,Annual rate of change,Food including alcohol and tobacco,"Euro area (EA11-1999, EA12-2001, EA13-2007, EA15-2008, EA16-2009, EA17-2011, EA18-2014, EA19-2015, EA20-2023)",2025-03-01,2.9
+Monthly,Annual rate of change,Food including alcohol and tobacco,"Euro area (EA11-1999, EA12-2001, EA13-2007, EA15-2008, EA16-2009, EA17-2011, EA18-2014, EA19-2015, EA20-2023)",2025-04-01,3.0
 Monthly,Annual rate of change,Food including alcohol and tobacco,Germany,2019-01-01,1.1
 Monthly,Annual rate of change,Food including alcohol and tobacco,Germany,2019-02-01,1.6
 Monthly,Annual rate of change,Food including alcohol and tobacco,Germany,2019-03-01,1.2
@@ -442,7 +452,9 @@ Monthly,Annual rate of change,Food including alcohol and tobacco,Germany,2024-10
 Monthly,Annual rate of change,Food including alcohol and tobacco,Germany,2024-11-01,2.9
 Monthly,Annual rate of change,Food including alcohol and tobacco,Germany,2024-12-01,3.2
 Monthly,Annual rate of change,Food including alcohol and tobacco,Germany,2025-01-01,1.9
-Monthly,Annual rate of change,Food including alcohol and tobacco,Germany,2025-02-01,3.0
+Monthly,Annual rate of change,Food including alcohol and tobacco,Germany,2025-02-01,2.9
+Monthly,Annual rate of change,Food including alcohol and tobacco,Germany,2025-03-01,3.3
+Monthly,Annual rate of change,Food including alcohol and tobacco,Germany,2025-04-01,3.1
 Monthly,Annual rate of change,Food including alcohol and tobacco,France,2019-01-01,3.9
 Monthly,Annual rate of change,Food including alcohol and tobacco,France,2019-02-01,4.2
 Monthly,Annual rate of change,Food including alcohol and tobacco,France,2019-03-01,3.1
@@ -517,6 +529,8 @@ Monthly,Annual rate of change,Food including alcohol and tobacco,France,2024-11-
 Monthly,Annual rate of change,Food including alcohol and tobacco,France,2024-12-01,1.0
 Monthly,Annual rate of change,Food including alcohol and tobacco,France,2025-01-01,0.7
 Monthly,Annual rate of change,Food including alcohol and tobacco,France,2025-02-01,0.8
+Monthly,Annual rate of change,Food including alcohol and tobacco,France,2025-03-01,1.0
+Monthly,Annual rate of change,Food including alcohol and tobacco,France,2025-04-01,1.5
 Monthly,Annual rate of change,Food including alcohol and tobacco,Italy,2019-01-01,0.8
 Monthly,Annual rate of change,Food including alcohol and tobacco,Italy,2019-02-01,2.0
 Monthly,Annual rate of change,Food including alcohol and tobacco,Italy,2019-03-01,1.4
@@ -590,7 +604,9 @@ Monthly,Annual rate of change,Food including alcohol and tobacco,Italy,2024-10-0
 Monthly,Annual rate of change,Food including alcohol and tobacco,Italy,2024-11-01,2.8
 Monthly,Annual rate of change,Food including alcohol and tobacco,Italy,2024-12-01,2.1
 Monthly,Annual rate of change,Food including alcohol and tobacco,Italy,2025-01-01,2.3
-Monthly,Annual rate of change,Food including alcohol and tobacco,Italy,2025-02-01,2.6
+Monthly,Annual rate of change,Food including alcohol and tobacco,Italy,2025-02-01,2.4
+Monthly,Annual rate of change,Food including alcohol and tobacco,Italy,2025-03-01,2.7
+Monthly,Annual rate of change,Food including alcohol and tobacco,Italy,2025-04-01,3.0
 Monthly,Annual rate of change,Non-energy industrial goods,"Euro area (EA11-1999, EA12-2001, EA13-2007, EA15-2008, EA16-2009, EA17-2011, EA18-2014, EA19-2015, EA20-2023)",2019-01-01,0.3
 Monthly,Annual rate of change,Non-energy industrial goods,"Euro area (EA11-1999, EA12-2001, EA13-2007, EA15-2008, EA16-2009, EA17-2011, EA18-2014, EA19-2015, EA20-2023)",2019-02-01,0.4
 Monthly,Annual rate of change,Non-energy industrial goods,"Euro area (EA11-1999, EA12-2001, EA13-2007, EA15-2008, EA16-2009, EA17-2011, EA18-2014, EA19-2015, EA20-2023)",2019-03-01,0.1
@@ -665,6 +681,8 @@ Monthly,Annual rate of change,Non-energy industrial goods,"Euro area (EA11-1999,
 Monthly,Annual rate of change,Non-energy industrial goods,"Euro area (EA11-1999, EA12-2001, EA13-2007, EA15-2008, EA16-2009, EA17-2011, EA18-2014, EA19-2015, EA20-2023)",2024-12-01,0.5
 Monthly,Annual rate of change,Non-energy industrial goods,"Euro area (EA11-1999, EA12-2001, EA13-2007, EA15-2008, EA16-2009, EA17-2011, EA18-2014, EA19-2015, EA20-2023)",2025-01-01,0.5
 Monthly,Annual rate of change,Non-energy industrial goods,"Euro area (EA11-1999, EA12-2001, EA13-2007, EA15-2008, EA16-2009, EA17-2011, EA18-2014, EA19-2015, EA20-2023)",2025-02-01,0.6
+Monthly,Annual rate of change,Non-energy industrial goods,"Euro area (EA11-1999, EA12-2001, EA13-2007, EA15-2008, EA16-2009, EA17-2011, EA18-2014, EA19-2015, EA20-2023)",2025-03-01,0.6
+Monthly,Annual rate of change,Non-energy industrial goods,"Euro area (EA11-1999, EA12-2001, EA13-2007, EA15-2008, EA16-2009, EA17-2011, EA18-2014, EA19-2015, EA20-2023)",2025-04-01,0.6
 Monthly,Annual rate of change,Non-energy industrial goods,Germany,2019-01-01,1.2
 Monthly,Annual rate of change,Non-energy industrial goods,Germany,2019-02-01,1.3
 Monthly,Annual rate of change,Non-energy industrial goods,Germany,2019-03-01,0.8
@@ -738,7 +756,9 @@ Monthly,Annual rate of change,Non-energy industrial goods,Germany,2024-10-01,0.8
 Monthly,Annual rate of change,Non-energy industrial goods,Germany,2024-11-01,1.0
 Monthly,Annual rate of change,Non-energy industrial goods,Germany,2024-12-01,1.3
 Monthly,Annual rate of change,Non-energy industrial goods,Germany,2025-01-01,1.2
-Monthly,Annual rate of change,Non-energy industrial goods,Germany,2025-02-01,0.7
+Monthly,Annual rate of change,Non-energy industrial goods,Germany,2025-02-01,0.6
+Monthly,Annual rate of change,Non-energy industrial goods,Germany,2025-03-01,0.8
+Monthly,Annual rate of change,Non-energy industrial goods,Germany,2025-04-01,0.8
 Monthly,Annual rate of change,Non-energy industrial goods,France,2019-01-01,0.0
 Monthly,Annual rate of change,Non-energy industrial goods,France,2019-02-01,-0.2
 Monthly,Annual rate of change,Non-energy industrial goods,France,2019-03-01,-0.3
@@ -813,6 +833,8 @@ Monthly,Annual rate of change,Non-energy industrial goods,France,2024-11-01,0.4
 Monthly,Annual rate of change,Non-energy industrial goods,France,2024-12-01,0.2
 Monthly,Annual rate of change,Non-energy industrial goods,France,2025-01-01,0.9
 Monthly,Annual rate of change,Non-energy industrial goods,France,2025-02-01,0.7
+Monthly,Annual rate of change,Non-energy industrial goods,France,2025-03-01,0.5
+Monthly,Annual rate of change,Non-energy industrial goods,France,2025-04-01,0.5
 Monthly,Annual rate of change,Non-energy industrial goods,Italy,2019-01-01,-0.5
 Monthly,Annual rate of change,Non-energy industrial goods,Italy,2019-02-01,-0.1
 Monthly,Annual rate of change,Non-energy industrial goods,Italy,2019-03-01,-0.2
@@ -887,6 +909,8 @@ Monthly,Annual rate of change,Non-energy industrial goods,Italy,2024-11-01,0.4
 Monthly,Annual rate of change,Non-energy industrial goods,Italy,2024-12-01,0.1
 Monthly,Annual rate of change,Non-energy industrial goods,Italy,2025-01-01,0.1
 Monthly,Annual rate of change,Non-energy industrial goods,Italy,2025-02-01,-0.1
+Monthly,Annual rate of change,Non-energy industrial goods,Italy,2025-03-01,0.5
+Monthly,Annual rate of change,Non-energy industrial goods,Italy,2025-04-01,0.3
 Monthly,Annual rate of change,Energy,"Euro area (EA11-1999, EA12-2001, EA13-2007, EA15-2008, EA16-2009, EA17-2011, EA18-2014, EA19-2015, EA20-2023)",2019-01-01,2.7
 Monthly,Annual rate of change,Energy,"Euro area (EA11-1999, EA12-2001, EA13-2007, EA15-2008, EA16-2009, EA17-2011, EA18-2014, EA19-2015, EA20-2023)",2019-02-01,3.6
 Monthly,Annual rate of change,Energy,"Euro area (EA11-1999, EA12-2001, EA13-2007, EA15-2008, EA16-2009, EA17-2011, EA18-2014, EA19-2015, EA20-2023)",2019-03-01,5.3
@@ -961,6 +985,8 @@ Monthly,Annual rate of change,Energy,"Euro area (EA11-1999, EA12-2001, EA13-2007
 Monthly,Annual rate of change,Energy,"Euro area (EA11-1999, EA12-2001, EA13-2007, EA15-2008, EA16-2009, EA17-2011, EA18-2014, EA19-2015, EA20-2023)",2024-12-01,0.1
 Monthly,Annual rate of change,Energy,"Euro area (EA11-1999, EA12-2001, EA13-2007, EA15-2008, EA16-2009, EA17-2011, EA18-2014, EA19-2015, EA20-2023)",2025-01-01,1.9
 Monthly,Annual rate of change,Energy,"Euro area (EA11-1999, EA12-2001, EA13-2007, EA15-2008, EA16-2009, EA17-2011, EA18-2014, EA19-2015, EA20-2023)",2025-02-01,0.2
+Monthly,Annual rate of change,Energy,"Euro area (EA11-1999, EA12-2001, EA13-2007, EA15-2008, EA16-2009, EA17-2011, EA18-2014, EA19-2015, EA20-2023)",2025-03-01,-1.0
+Monthly,Annual rate of change,Energy,"Euro area (EA11-1999, EA12-2001, EA13-2007, EA15-2008, EA16-2009, EA17-2011, EA18-2014, EA19-2015, EA20-2023)",2025-04-01,-3.6
 Monthly,Annual rate of change,Energy,Germany,2019-01-01,2.6
 Monthly,Annual rate of change,Energy,Germany,2019-02-01,3.2
 Monthly,Annual rate of change,Energy,Germany,2019-03-01,4.6
@@ -1034,7 +1060,9 @@ Monthly,Annual rate of change,Energy,Germany,2024-10-01,-5.4
 Monthly,Annual rate of change,Energy,Germany,2024-11-01,-3.6
 Monthly,Annual rate of change,Energy,Germany,2024-12-01,-1.5
 Monthly,Annual rate of change,Energy,Germany,2025-01-01,-1.3
-Monthly,Annual rate of change,Energy,Germany,2025-02-01,-1.2
+Monthly,Annual rate of change,Energy,Germany,2025-02-01,-1.3
+Monthly,Annual rate of change,Energy,Germany,2025-03-01,-2.6
+Monthly,Annual rate of change,Energy,Germany,2025-04-01,-5.3
 Monthly,Annual rate of change,Energy,France,2019-01-01,2.0
 Monthly,Annual rate of change,Energy,France,2019-02-01,3.3
 Monthly,Annual rate of change,Energy,France,2019-03-01,5.1
@@ -1108,7 +1136,9 @@ Monthly,Annual rate of change,Energy,France,2024-10-01,-1.9
 Monthly,Annual rate of change,Energy,France,2024-11-01,-0.7
 Monthly,Annual rate of change,Energy,France,2024-12-01,1.2
 Monthly,Annual rate of change,Energy,France,2025-01-01,2.6
-Monthly,Annual rate of change,Energy,France,2025-02-01,-5.6
+Monthly,Annual rate of change,Energy,France,2025-02-01,-5.7
+Monthly,Annual rate of change,Energy,France,2025-03-01,-6.3
+Monthly,Annual rate of change,Energy,France,2025-04-01,-7.4
 Monthly,Annual rate of change,Energy,Italy,2019-01-01,3.8
 Monthly,Annual rate of change,Energy,Italy,2019-02-01,4.2
 Monthly,Annual rate of change,Energy,Italy,2019-03-01,5.6
@@ -1183,6 +1213,8 @@ Monthly,Annual rate of change,Energy,Italy,2024-11-01,-5.4
 Monthly,Annual rate of change,Energy,Italy,2024-12-01,-2.7
 Monthly,Annual rate of change,Energy,Italy,2025-01-01,-0.7
 Monthly,Annual rate of change,Energy,Italy,2025-02-01,0.6
+Monthly,Annual rate of change,Energy,Italy,2025-03-01,2.7
+Monthly,Annual rate of change,Energy,Italy,2025-04-01,-0.7
 Monthly,Annual rate of change,Services (overall index excluding goods),"Euro area (EA11-1999, EA12-2001, EA13-2007, EA15-2008, EA16-2009, EA17-2011, EA18-2014, EA19-2015, EA20-2023)",2019-01-01,1.6
 Monthly,Annual rate of change,Services (overall index excluding goods),"Euro area (EA11-1999, EA12-2001, EA13-2007, EA15-2008, EA16-2009, EA17-2011, EA18-2014, EA19-2015, EA20-2023)",2019-02-01,1.4
 Monthly,Annual rate of change,Services (overall index excluding goods),"Euro area (EA11-1999, EA12-2001, EA13-2007, EA15-2008, EA16-2009, EA17-2011, EA18-2014, EA19-2015, EA20-2023)",2019-03-01,1.1
@@ -1257,6 +1289,8 @@ Monthly,Annual rate of change,Services (overall index excluding goods),"Euro are
 Monthly,Annual rate of change,Services (overall index excluding goods),"Euro area (EA11-1999, EA12-2001, EA13-2007, EA15-2008, EA16-2009, EA17-2011, EA18-2014, EA19-2015, EA20-2023)",2024-12-01,4.0
 Monthly,Annual rate of change,Services (overall index excluding goods),"Euro area (EA11-1999, EA12-2001, EA13-2007, EA15-2008, EA16-2009, EA17-2011, EA18-2014, EA19-2015, EA20-2023)",2025-01-01,3.9
 Monthly,Annual rate of change,Services (overall index excluding goods),"Euro area (EA11-1999, EA12-2001, EA13-2007, EA15-2008, EA16-2009, EA17-2011, EA18-2014, EA19-2015, EA20-2023)",2025-02-01,3.7
+Monthly,Annual rate of change,Services (overall index excluding goods),"Euro area (EA11-1999, EA12-2001, EA13-2007, EA15-2008, EA16-2009, EA17-2011, EA18-2014, EA19-2015, EA20-2023)",2025-03-01,3.5
+Monthly,Annual rate of change,Services (overall index excluding goods),"Euro area (EA11-1999, EA12-2001, EA13-2007, EA15-2008, EA16-2009, EA17-2011, EA18-2014, EA19-2015, EA20-2023)",2025-04-01,4.0
 Monthly,Annual rate of change,Services (overall index excluding goods),Germany,2019-01-01,2.1
 Monthly,Annual rate of change,Services (overall index excluding goods),Germany,2019-02-01,1.7
 Monthly,Annual rate of change,Services (overall index excluding goods),Germany,2019-03-01,1.2
@@ -1330,7 +1364,9 @@ Monthly,Annual rate of change,Services (overall index excluding goods),Germany,2
 Monthly,Annual rate of change,Services (overall index excluding goods),Germany,2024-11-01,4.5
 Monthly,Annual rate of change,Services (overall index excluding goods),Germany,2024-12-01,4.6
 Monthly,Annual rate of change,Services (overall index excluding goods),Germany,2025-01-01,5.1
-Monthly,Annual rate of change,Services (overall index excluding goods),Germany,2025-02-01,5.0
+Monthly,Annual rate of change,Services (overall index excluding goods),Germany,2025-02-01,4.7
+Monthly,Annual rate of change,Services (overall index excluding goods),Germany,2025-03-01,4.1
+Monthly,Annual rate of change,Services (overall index excluding goods),Germany,2025-04-01,4.5
 Monthly,Annual rate of change,Services (overall index excluding goods),France,2019-01-01,1.0
 Monthly,Annual rate of change,Services (overall index excluding goods),France,2019-02-01,1.0
 Monthly,Annual rate of change,Services (overall index excluding goods),France,2019-03-01,0.6
@@ -1405,6 +1441,8 @@ Monthly,Annual rate of change,Services (overall index excluding goods),France,20
 Monthly,Annual rate of change,Services (overall index excluding goods),France,2024-12-01,2.9
 Monthly,Annual rate of change,Services (overall index excluding goods),France,2025-01-01,2.6
 Monthly,Annual rate of change,Services (overall index excluding goods),France,2025-02-01,2.4
+Monthly,Annual rate of change,Services (overall index excluding goods),France,2025-03-01,2.5
+Monthly,Annual rate of change,Services (overall index excluding goods),France,2025-04-01,2.5
 Monthly,Annual rate of change,Services (overall index excluding goods),Italy,2019-01-01,1.2
 Monthly,Annual rate of change,Services (overall index excluding goods),Italy,2019-02-01,0.7
 Monthly,Annual rate of change,Services (overall index excluding goods),Italy,2019-03-01,0.7
@@ -1479,6 +1517,8 @@ Monthly,Annual rate of change,Services (overall index excluding goods),Italy,202
 Monthly,Annual rate of change,Services (overall index excluding goods),Italy,2024-12-01,2.9
 Monthly,Annual rate of change,Services (overall index excluding goods),Italy,2025-01-01,2.9
 Monthly,Annual rate of change,Services (overall index excluding goods),Italy,2025-02-01,2.6
+Monthly,Annual rate of change,Services (overall index excluding goods),Italy,2025-03-01,2.8
+Monthly,Annual rate of change,Services (overall index excluding goods),Italy,2025-04-01,3.4
 Monthly,Annual rate of change,"Overall index excluding energy, food, alcohol and tobacco","Euro area (EA11-1999, EA12-2001, EA13-2007, EA15-2008, EA16-2009, EA17-2011, EA18-2014, EA19-2015, EA20-2023)",2019-01-01,1.1
 Monthly,Annual rate of change,"Overall index excluding energy, food, alcohol and tobacco","Euro area (EA11-1999, EA12-2001, EA13-2007, EA15-2008, EA16-2009, EA17-2011, EA18-2014, EA19-2015, EA20-2023)",2019-02-01,1.0
 Monthly,Annual rate of change,"Overall index excluding energy, food, alcohol and tobacco","Euro area (EA11-1999, EA12-2001, EA13-2007, EA15-2008, EA16-2009, EA17-2011, EA18-2014, EA19-2015, EA20-2023)",2019-03-01,0.8
@@ -1553,6 +1593,8 @@ Monthly,Annual rate of change,"Overall index excluding energy, food, alcohol and
 Monthly,Annual rate of change,"Overall index excluding energy, food, alcohol and tobacco","Euro area (EA11-1999, EA12-2001, EA13-2007, EA15-2008, EA16-2009, EA17-2011, EA18-2014, EA19-2015, EA20-2023)",2024-12-01,2.7
 Monthly,Annual rate of change,"Overall index excluding energy, food, alcohol and tobacco","Euro area (EA11-1999, EA12-2001, EA13-2007, EA15-2008, EA16-2009, EA17-2011, EA18-2014, EA19-2015, EA20-2023)",2025-01-01,2.7
 Monthly,Annual rate of change,"Overall index excluding energy, food, alcohol and tobacco","Euro area (EA11-1999, EA12-2001, EA13-2007, EA15-2008, EA16-2009, EA17-2011, EA18-2014, EA19-2015, EA20-2023)",2025-02-01,2.6
+Monthly,Annual rate of change,"Overall index excluding energy, food, alcohol and tobacco","Euro area (EA11-1999, EA12-2001, EA13-2007, EA15-2008, EA16-2009, EA17-2011, EA18-2014, EA19-2015, EA20-2023)",2025-03-01,2.4
+Monthly,Annual rate of change,"Overall index excluding energy, food, alcohol and tobacco","Euro area (EA11-1999, EA12-2001, EA13-2007, EA15-2008, EA16-2009, EA17-2011, EA18-2014, EA19-2015, EA20-2023)",2025-04-01,2.7
 Monthly,Annual rate of change,"Overall index excluding energy, food, alcohol and tobacco",Germany,2019-01-01,1.8
 Monthly,Annual rate of change,"Overall index excluding energy, food, alcohol and tobacco",Germany,2019-02-01,1.6
 Monthly,Annual rate of change,"Overall index excluding energy, food, alcohol and tobacco",Germany,2019-03-01,1.0
@@ -1626,7 +1668,9 @@ Monthly,Annual rate of change,"Overall index excluding energy, food, alcohol and
 Monthly,Annual rate of change,"Overall index excluding energy, food, alcohol and tobacco",Germany,2024-11-01,3.1
 Monthly,Annual rate of change,"Overall index excluding energy, food, alcohol and tobacco",Germany,2024-12-01,3.3
 Monthly,Annual rate of change,"Overall index excluding energy, food, alcohol and tobacco",Germany,2025-01-01,3.6
-Monthly,Annual rate of change,"Overall index excluding energy, food, alcohol and tobacco",Germany,2025-02-01,3.3
+Monthly,Annual rate of change,"Overall index excluding energy, food, alcohol and tobacco",Germany,2025-02-01,3.1
+Monthly,Annual rate of change,"Overall index excluding energy, food, alcohol and tobacco",Germany,2025-03-01,2.8
+Monthly,Annual rate of change,"Overall index excluding energy, food, alcohol and tobacco",Germany,2025-04-01,3.1
 Monthly,Annual rate of change,"Overall index excluding energy, food, alcohol and tobacco",France,2019-01-01,0.6
 Monthly,Annual rate of change,"Overall index excluding energy, food, alcohol and tobacco",France,2019-02-01,0.6
 Monthly,Annual rate of change,"Overall index excluding energy, food, alcohol and tobacco",France,2019-03-01,0.3
@@ -1700,7 +1744,9 @@ Monthly,Annual rate of change,"Overall index excluding energy, food, alcohol and
 Monthly,Annual rate of change,"Overall index excluding energy, food, alcohol and tobacco",France,2024-11-01,2.2
 Monthly,Annual rate of change,"Overall index excluding energy, food, alcohol and tobacco",France,2024-12-01,2.0
 Monthly,Annual rate of change,"Overall index excluding energy, food, alcohol and tobacco",France,2025-01-01,2.0
-Monthly,Annual rate of change,"Overall index excluding energy, food, alcohol and tobacco",France,2025-02-01,1.8
+Monthly,Annual rate of change,"Overall index excluding energy, food, alcohol and tobacco",France,2025-02-01,1.9
+Monthly,Annual rate of change,"Overall index excluding energy, food, alcohol and tobacco",France,2025-03-01,1.8
+Monthly,Annual rate of change,"Overall index excluding energy, food, alcohol and tobacco",France,2025-04-01,1.9
 Monthly,Annual rate of change,"Overall index excluding energy, food, alcohol and tobacco",Italy,2019-01-01,0.6
 Monthly,Annual rate of change,"Overall index excluding energy, food, alcohol and tobacco",Italy,2019-02-01,0.4
 Monthly,Annual rate of change,"Overall index excluding energy, food, alcohol and tobacco",Italy,2019-03-01,0.3
@@ -1775,3 +1821,5 @@ Monthly,Annual rate of change,"Overall index excluding energy, food, alcohol and
 Monthly,Annual rate of change,"Overall index excluding energy, food, alcohol and tobacco",Italy,2024-12-01,1.8
 Monthly,Annual rate of change,"Overall index excluding energy, food, alcohol and tobacco",Italy,2025-01-01,1.8
 Monthly,Annual rate of change,"Overall index excluding energy, food, alcohol and tobacco",Italy,2025-02-01,1.5
+Monthly,Annual rate of change,"Overall index excluding energy, food, alcohol and tobacco",Italy,2025-03-01,1.8
+Monthly,Annual rate of change,"Overall index excluding energy, food, alcohol and tobacco",Italy,2025-04-01,2.2
